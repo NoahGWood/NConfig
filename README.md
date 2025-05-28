@@ -1,5 +1,7 @@
 # NConfig
 
+[![CI](https://github.com/NoahGWood/NConfig/actions/workflows/ci.yaml/badge.svg)](https://github.com/NoahGWood/NConfig/actions/workflows/ci.yaml)&nbsp;[![Issues](https://img.shields.io/github/issues/NoahGWood/NConfig.svg)](https://github.com/NoahGWood/NConfig/issues)&nbsp;[![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)]()&nbsp;[![Last Commit](https://img.shields.io/github/last-commit/NoahGWood/NConfig.svg)](https://github.com/NoahGWood/NConfig)
+
 **NConfig** is a minimalist `.conf` file parser for C++ apps, using INI-like syntax with enhanced access patterns.
 
 ## ✨ Features
