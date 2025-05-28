@@ -1,0 +1,6 @@
+[submodule "vendor/NTest"]
+	path = vendor/NTest
+	url = https://github.com/NoahGWood/NTest.git
+[submodule "vendor/NCLI"]
+	path = vendor/NCLI
+	url = https://github.com/NoahGWood/NCLI.git
