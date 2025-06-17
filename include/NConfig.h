@@ -168,14 +168,13 @@ template<>
 inline bool NConfig::get<bool>(const std::string& key, const bool& fallback) const {
     auto it = m_Data.find(key);
     if (it != m_Data.end()) {
-        std::string val = it->second;
+        std::string val = trim(it->second);
         std::transform(val.begin(), val.end(), val.begin(), ::tolower);
-        return (val == "true" || val == "1" || val == "yes");
+        if (val == "true" || val == "1" || val == "yes" || val == "on") return true;
+        if (val == "false" || val == "0" || val == "no" || val == "off") return false;
     }
     return fallback;
 }
-
-
 
 #define NCONFIG_DEFINE_GET_SET(Type, ToStrFunc, FromStrFunc)                          \
 template<> inline Type NConfig::get<Type>(const std::string& key, const Type& fallback) const { \
